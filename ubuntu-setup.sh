@@ -84,6 +84,9 @@ git clone https://github.com/Dambe/SF-Mono-Powerline.git ~/src/fonts/SF-Mono-Pow
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm ~/.zshrc
 
+# install tmux plugin manager (TPM)
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 # create symlinks
 ln -s ~/src/utils/oh-my-zsh.rc ~/.zshrc
 ln -s ~/src/utils/amuse_own.zsh-theme ~/.oh-my-zsh/themes/amuse_own.zsh-theme
@@ -92,6 +95,7 @@ source ~/.zshrc
 ln -s ~/src/utils/tmux.conf ~/.tmux.conf
 ln -s ~/src/utils/vim.rc ~/.vimrc
 ln -s ~/src/utils/git.config ~/.gitconfig
+ln -s ~/src/utils/xd /usr/local/bin/xd
 
 # install gnome extensions
 array=( https://extensions.gnome.org/extension/3628/arcmenu/

@@ -25,7 +25,8 @@ cat "$@" \
   |sed -e :a -e '$!N;s,\n\\, #xd\#,;ta' -e 'P;D' |egrep -v "^([-]{3}|[+]{3}) " >$NAME
 [ ! -s $NAME ] && echo no changes && exit
 
-egrep "^[^+]" $NAME |sed -r -e "s,^[- ],," -e "s, #xd\#,\n!!,g" >$NAME.0
-egrep "^[^-]" $NAME |sed -r -e "s,^[+ ],," -e "s, #xd\#,\n!!,g" >$NAME.1
+egrep "^[^+]|^$" $NAME |sed -r -e "s,^[- ],," -e "s, #xd\#,\n!!,g" >$NAME.0
+egrep "^[^-]|^$" $NAME |sed -r -e "s,^[+ ],," -e "s, #xd\#,\n!!,g" >$NAME.1
 
 sh -c 'vimdiff -R "$@" <$0' /dev/tty $NAME.0 $NAME.1
+
