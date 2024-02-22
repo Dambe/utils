@@ -134,6 +134,7 @@ bindkey '^[[Z' undo                               # shift + tab undo last action
 #bindkey '^[#' insert-comment                     # Alt+#
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/src/utils/git-completion.bash] && source ~/src/utils/git-completion.bash
 
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \

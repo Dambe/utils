@@ -2,10 +2,13 @@
 
 ## Adding git completion for the Shell
 
-Add the following line to your .bashrc:
+## Git scripts source
+
+git-completion.bash is taken from
+<https://github.com/git/git/tree/master/contrib/completion>
 
 ```bash
-source ~/utils/git-completion.bash
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 ```
 
 ## Global git configuration
@@ -16,21 +19,12 @@ Create symbolic link to local git.config to use it as global Git configuration:
 ln -s ~/utils/git.config ~/.gitconfig
 ```
 
-## Git scripts source
-
-git-completion.bash is taken from
-<https://raw.githubusercontent.com/git/git/master/contrib/completion/>
-
-```bash
-wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-```
-
 ## Show diff output as two windows in vimdiff
 
 To use you can create a symbolic link to `xd` in `/usr/local/bin`:
 
 ```bash
-ln -s ~/utils/xd /usr/local/bin/xd
+ln -s ~/src/utils/xd /usr/local/bin/xd
 ```
 
 Example usage:
@@ -45,8 +39,8 @@ cat some.patch |xd
 You can also preprocess diff output to get more precise results:
 
 ```bash
-  git diff ... |grep -v ... |sed ... |xd
-  cat some.patch |grep -v ... |sed ... |xd
+git diff ... |grep -v ... |sed ... |xd
+cat some.patch |grep -v ... |sed ... |xd
 ```
 
 ## Install oh-my-zsh
