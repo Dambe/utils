@@ -4,11 +4,11 @@
 
 ## Git scripts source
 
-git-completion.bash is taken from
+git-completion.zsh is taken from
 <https://github.com/git/git/tree/master/contrib/completion>
 
 ```bash
-wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 ```
 
 ## Global git configuration
