@@ -67,7 +67,7 @@ git clone <https://github.com/Dambe/SF-Mono-Powerline.git> ~/src/fonts/SF-Mono-P
 Install oh-my-zsh
 
 ```bash
-sh -c "$(curl -fsSL <https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh>)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm ~/.zshrc
 ```
 
@@ -112,7 +112,7 @@ To install plugins, press `prefix + I` (capital i, as in Install) to fetch the p
 Refer to <https://github.com/chriskempson/base16-shell>
 
 ```bash
-git clone <https://github.com/chriskempson/base16-shell.git> ~/.config/base16-shell
+git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 ```
 
 ## Setup vim
@@ -128,7 +128,7 @@ Refer to <https://github.com/junegunn/vim-plug>
 
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    <https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim>
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 Open vim and type `:PlugInstall` to install plugins.
