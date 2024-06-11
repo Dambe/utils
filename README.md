@@ -61,7 +61,7 @@ Install SF-Mono-Powerline font
 
 ```bash
 mkdir -p ~/.fonts
-git clone <https://github.com/Dambe/SF-Mono-Powerline.git> ~/src/fonts/SF-Mono-Powerline
+git clone https://github.com/Dambe/SF-Mono-Powerline.git ~/src/fonts/SF-Mono-Powerline
 ```
 
 Install oh-my-zsh
