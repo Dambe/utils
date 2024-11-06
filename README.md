@@ -62,6 +62,8 @@ Install SF-Mono-Powerline font
 ```bash
 mkdir -p ~/.fonts
 git clone https://github.com/Dambe/SF-Mono-Powerline.git ~/src/fonts/SF-Mono-Powerline
+cp ~/.fonts/SF-Mono-Powerline-* ~/.local/share/fonts
+fc-cache -fv
 ```
 
 Install oh-my-zsh
@@ -77,6 +79,15 @@ Create symlinks
 ln -s ~/src/utils/oh-my-zsh.rc ~/.zshrc
 ln -s ~/src/utils/amuse_own.zsh-theme ~/.oh-my-zsh/themes/amuse_own.zsh-theme
 source ~/.zshrc
+```
+
+## Install fuzzysearch
+
+Refer to <https://github.com/junegunn/fzf>
+
+```bash
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 ```
 
 ## Setup tmux
