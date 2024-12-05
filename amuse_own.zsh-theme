@@ -19,7 +19,7 @@ ZSH_THEME_RUBY_PROMPT_SUFFIX="›%{$reset_color%}"
 
 PROMPT='
 %{%F{blue}%}%{%F{34}%} %~ $(git_prompt_info)$(virtualenv_prompt_info)
-%{%F{blue}%}%{%F{227}%}❭ %{$reset_color%}'
+%{%F{blue}%}%{%F{227}%}$ %{$reset_color%}'
 
 RPROMPT='$(ruby_prompt_info)'
 
