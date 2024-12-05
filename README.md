@@ -61,13 +61,15 @@ Install SF-Mono-Powerline font
 
 ```bash
 mkdir -p ~/.fonts
-git clone <https://github.com/Dambe/SF-Mono-Powerline.git> ~/src/fonts/SF-Mono-Powerline
+git clone https://github.com/Dambe/SF-Mono-Powerline.git ~/src/fonts/SF-Mono-Powerline
+cp ~/.fonts/SF-Mono-Powerline-* ~/.local/share/fonts
+fc-cache -fv
 ```
 
 Install oh-my-zsh
 
 ```bash
-sh -c "$(curl -fsSL <https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh>)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm ~/.zshrc
 ```
 
@@ -77,6 +79,15 @@ Create symlinks
 ln -s ~/src/utils/oh-my-zsh.rc ~/.zshrc
 ln -s ~/src/utils/amuse_own.zsh-theme ~/.oh-my-zsh/themes/amuse_own.zsh-theme
 source ~/.zshrc
+```
+
+## Install fuzzysearch
+
+Refer to <https://github.com/junegunn/fzf>
+
+```bash
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 ```
 
 ## Setup tmux
@@ -112,7 +123,7 @@ To install plugins, press `prefix + I` (capital i, as in Install) to fetch the p
 Refer to <https://github.com/chriskempson/base16-shell>
 
 ```bash
-git clone <https://github.com/chriskempson/base16-shell.git> ~/.config/base16-shell
+git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 ```
 
 ## Setup vim
@@ -128,7 +139,7 @@ Refer to <https://github.com/junegunn/vim-plug>
 
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    <https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim>
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 Open vim and type `:PlugInstall` to install plugins.
